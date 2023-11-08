@@ -1,0 +1,83 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+* {
+  outline: 0;
+    &,
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
+}
+
+a, .btn{
+  transition: 0.5s all ease-in-out;
+}
+
+body {
+  background-color: $color-white;
+  font-family: $base-font-family;
+}
+
+
+a{
+  color: $color-black;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+button{
+  &:focus{
+    outline: none;
+  }
+}
+
+ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure{
+  margin: 0px;
+}
+
+address{
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 1200px){
+  .container{
+    max-width: 1140px;
+  }
+}
+@include mobile-landscape { 
+  .container{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: $mobile-sm){
+  .container{
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.aos-init,.aos-animate{
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    transition: none;
+    transform: none;
+    transition-delay: 0;
+    transition-duration: 0;
+  }
+}
+
+.slick-slide{
+  outline: 0;
+}

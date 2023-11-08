@@ -1,0 +1,59 @@
+/*------------------*
+# Variables
+*------------------*/
+
+/*
+ * This file includes default variables to get going quickly on a project.
+ * File includes:
+ * - Base font family
+ * - Base font sizes
+ * - Heading spacing
+ * - Paragraph spacing
+ * - Base line height
+ * - Base colors
+*/
+
+/*
+ * Base font family
+*/
+
+$content-font-family: 'Gotham Book', sans-serif;;
+$base-font-family: 'Gotham', sans-serif;
+
+/*
+ * Base font sizes
+*/
+
+$base-font-size: 16px !default;
+
+$h1-size: 44px !default;
+$h2-size: 28px !default;
+$h3-size: 24px !default;
+$h4-size: 18px !default;
+$h5-size: 16px !default;
+$h6-size: 14px !default;
+$p-size: 18px !default;
+
+/*
+ * Base line height
+*/
+
+$base-line-height: 1.5 !default;
+
+/*
+ * Base colors
+*/
+
+$color-white: #ffffff !default;
+$color-black: #000000 !default; 
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+// Breakpoints
+$desktop-lg: 1440px;
+$desktop-sm: 1365px;
+$tablet-lg: 1200px; 
+$tablet-sm: 990px;
+$mobile-lg: 720px;
+$mobile-sm: 580px;
