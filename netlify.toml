@@ -1,0 +1,17 @@
+[build]
+  command = "npm run prod"  # Specify your build command
+  publish = "dist"  # Directory to deploy
+
+[[redirects]]  # Example redirect rule
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[headers]  # Example headers configuration
+  "/*" = [
+    "Cache-Control: public, max-age=0, must-revalidate",
+    "X-Frame-Options: DENY",
+    "X-XSS-Protection: 1; mode=block",
+    "X-Content-Type-Options: nosniff",
+  ]
+
