@@ -1,5 +1,5 @@
 [build]
-  command = "npm run prod"
+  command = "cross-env NODE_ENV=prod gulp"
   functions = "functions"
   publish = "dist"
 
