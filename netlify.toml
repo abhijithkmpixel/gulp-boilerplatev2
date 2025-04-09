@@ -1,15 +1,9 @@
 [build]
-  command = "cross-env NODE_ENV=prod gulp"
-  functions = "functions"
+  command = "npm run prod"
   publish = "dist"
 
-[[plugins]]
-  package = "@netlify/plugin-pr-bot"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+[context.production.environment]
+  NODE_VERSION = "14"
 
 [headers]
   "/*" = [
